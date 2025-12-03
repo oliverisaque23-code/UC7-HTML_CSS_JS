@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <title> <cite>Barbearia</cite> </title>
+
+  <link rel="stylesheet" href="style.css">
+
+<style>
+  body {
+    background-color: #ffffff;}
+
+    mark {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+    }
+</style>
+
+
+</head>
+
+<body"> 
+   <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">Minha Barbearia</h1>
+   <hr>
+
+<pre style= > 
+    <sup>Seja bem-vindo a minha Barbearia!</sup>
+         </pre>
+<pre style= "font-family: 'Courier New', Courier, monospace; font-size: 20px; color: rgb(3, 3, 3);">
+    Aqui você encontra os <strong>Melhores</strong> cortes
+    para <b>todos</b> os <b>estilos</b> e <i>idades.</i>
+
+<img src="https://img.freepik.com/fotos-premium/cliente-hipster-cortando-o-cabelo-maos-de-barbeiro-com-maquina-de-cortar-cabelo-close-up-homem-barbudo-na-barbearia-conceito-de-corte-de-cabelo-homem-visitando-cabeleireiro-na-barbearia_293990-3162.jpg" width="360" height="300" alt="Barbearia" style="display: block; margin-left: auto; margin-right: auto;"/>
+  <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;" >
+
+  </p> <small>barbeiros são profissionais 
+ experientes e dedicados a proporcionar a 
+ melhor experiência possível.</small>
+
+  <em> Nossos serviços incluem: </em> 
+    <ins>- Cortes de cabelo</ins>
+    - Barba e bigode
+    - Tratamentos capilares
+    <abbr>- Design de sobrancelhas</abbr>
+    <del>- Atendimento personalizado</del>
+    <bdo>- Ambiente acolhedor e descontraído</bdo>
+    <sub>- Produtos de alta qualidade
+
+    </sub>
+
+  <mark> seu horário e venha nos visitar!</mark>
+</pre> <address> Nosso gmail: Oliverisaque23@gmail.com</address>  
+<q>nosso telefone: (11) 98765-4321</q>
+<pre style=" font-family: 'Arial Black', Gadget, sans-serif; font-size: 20px; color: red; text-align: center;" > 
+    <strong> <blockquote> Esperamos por você!</blockquote>  </strong>
+
+</pre>
+
+ 
+<body>
+</html>
+
+
+
+
+Css: 
+
+body{
+    text-align: center;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-align: center;
+}
+
+sup{
+    color: rgb(0, 0, 0);
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 25px;
+}
+
