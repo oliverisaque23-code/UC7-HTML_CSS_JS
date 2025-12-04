@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    
+    mark {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      background-color: yellow;
+      padding: 2px 5px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .imagem-link {
+      cursor: pointer;
+      border: 2px solid #333;
+      border-radius: 5px;
+      transition: transform 0.3s;
+      display: block;
+      margin: 20px auto;
+    }
+    
+    .imagem-link:hover {
+      transform: scale(1.02);
+      border-color: #ff0000;
+    }
+    
+    .servicos-lista {
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+    
+    /* Estilo para garantir que o link funcione */
+    .link-imagem {
+      display: inline-block;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">Minha Barbearia</h1>
+    <hr>
+
+    <p style="text-align: center; font-size: 18px;">
+      <sup>Seja bem-vindo a minha Barbearia!</sup>
+    </p>
+    
+    <div style="font-family: 'Courier New', Courier, monospace; font-size: 20px; color: rgb(3, 3, 3); text-align: center;">
+      <p>Aqui você encontra os <strong>Melhores</strong> cortes<br>
+      para <strong>todos</strong> os <strong>estilos</strong> e <em>idades.</em></p>
+
+
+        <img src="https://img.freepik.com/fotos-premium/cliente-hipster-cortando-o-cabelo-maos-de-barbeiro-com-maquina-de-cortar-cabelo-close-up-homem-barbudo-na-barbearia-conceito-de-corte-de-cabelo-homem-visitando-cabeleireiro-na-barbearia_293990-3162.jpg" 
+             width="450" 
+             height="300" 
+             alt="Imagem da Barbearia - Clique para ver galeria" 
+             class="imagem-link"
+             onclick="window.location.href='seguda_pagina.html'">
+
+
+
+<!--
+       IMAGEM COM LINK CORRIGIDO 
+      <a href="segunda_pagina.html" class="link-imagem">
+        <img src="https://img.freepik.com/fotos-premium/cliente-hipster-cortando-o-cabelo-maos-de-barbeiro-com-maquina-de-cortar-cabelo-close-up-homem-barbudo-na-barbearia-conceito-de-corte-de-cabelo-homem-visitando-cabeleireiro-na-barbearia_293990-3162.jpg" 
+             width="450" 
+             height="300" 
+             alt="Imagem da Barbearia - Clique para ver galeria" 
+             class="imagem-link">
+      </a>
+    </div>
+    -->
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+      <small>Nossos barbeiros são profissionais experientes e dedicados a proporcionar a melhor experiência possível.</small>
+    </p>
+
+    <p><em>Nossos serviços incluem:</em></p>
+    <ul class="servicos-lista">
+      <li><ins>Cortes de cabelo</ins></li>
+      <li>Barba e bigode</li>
+      <li>Tratamentos capilares</li>
+      <li><abbr title="Design de sobrancelhas">Design de sobrancelhas</abbr></li>
+      <li><del>Atendimento personalizado</del> <small>(agora ainda mais personalizado!)</small></li>
+      <li><bdo dir="rtl">Ambiente acolhedor e descontraído</bdo></li>
+      <li><sub>Produtos de alta qualidade</sub></li>
+    </ul>
+
+    <mark>Agende seu horário e venha nos visitar!</mark>
+
+    <address style="margin-top: 20px; display: block;">
+      Nosso email: Oliverisaque23@gmail.com<br>
+      <q>Nosso telefone: (11) 98765-4321</q>
+    </address>
+
+    <div style="font-family: 'Arial Black', Gadget, sans-serif; font-size: 20px; color: red; text-align: center; margin-top: 30px;">
+      <strong>
+        <blockquote>Esperamos por você!</blockquote>
+      </strong>
+    </div>
+    
+    <p style="text-align: center; margin-top: 20px;"> 
+    </p>
+  </div>
+</body>
+</html> 
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Barbearia</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .imagem-full {
+            max-width: 100%;
+            max-height: 100vh;
+            cursor: pointer;
+        }
+        
+        /* Botão de voltar invisível mas funcional */
+        .area-voltar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100vh;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        /* Indicador visual para voltar */
+        .indicador-voltar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 20;
+            background-color: rgba(0,0,0,0.5);
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Área clicável para voltar -->
+    <div class="area-voltar" onclick="window.location.href='main.html'"></div>
+    
+    <!-- Indicador visual -->
+    <div class="indicador-voltar" onclick="window.location.href='main.html'">←</div>
+    
+    <!-- Imagem principal que também pode ser clicada para voltar -->
+    <img src="https://img.freepik.com/fotos-premium/cliente-hipster-cortando-o-cabelo-maos-de-barbeiro-com-maquina-de-cortar-cabelo-close-up-homem-barbudo-na-barbearia-conceito-de-corte-de-cabelo-homem-visitando-cabeleireiro-na-barbearia_293990-3162.jpg" 
+         alt="Galeria Barbearia" 
+         class="imagem-full"
+         onclick="window.location.href='main.html'">
+</body>
+</html>
+
