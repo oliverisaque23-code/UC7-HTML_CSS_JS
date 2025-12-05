@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Interativo da Empresa</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border: 3px solid #222;
+      max-width: 90%;
+    }
+
+    section {
+      background: white;
+      padding: 15px;
+      margin-top: 20px;
+      border-left: 6px solid #333;
+      display: none;
+    }
+
+    section:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mapa Interativo dos Escritórios</h1>
+
+  <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+       width="800"
+       height="500"
+       usemap="#mapa">
+
+  <map name="mapa">
+
+    <area shape="rect"
+          coords="50,30,250,150"
+          href="#recepcao"
+          alt="Recepção">
+
+    <area shape="circle"
+          coords="400,100,60"
+          href="#desenvolvimento"
+          alt="Desenvolvimento">
+
+    <area shape="poly"
+          coords="600,50,700,50,650,150"
+          href="#marketing"
+          alt="Marketing">
+
+    <area shape="rect"
+          coords="50,250,300,450"
+          href="#rh"
+          alt="RH"> 
+
+    <area shape="poly"
+          coords="500,350,550,300,650,320,640,400,550,420"
+          href="#diretoria"
+          alt="Diretoria">
+
+  </map>
+
+  <section id="recepcao">
+    <h2>Recepção</h2>
+    <p>Primeira sala do corredor. Local onde visitantes são recebidos e direcionados.</p>
+  </section>
+
+  <section id="desenvolvimento">
+    <h2>Departamento de Desenvolvimento</h2>
+    <p>Equipe responsável por criar softwares, sistemas e tecnologias da empresa.</p>
+  </section>
+
+  <section id="marketing">
+    <h2>Marketing</h2>
+    <p>Área responsável pela identidade visual, campanhas e redes sociais da empresa.</p>
+  </section>
+
+  <section id="rh">
+    <h2>Recursos Humanos (RH)</h2>
+    <p>Departamento que cuida da contratação, treinamento e bem-estar dos colaboradores.</p>
+  </section>
+
+  <section id="diretoria">
+    <h2>Diretoria</h2>
+    <p>Espaço reservado para decisões estratégicas e reuniões importantes.</p>
+  </section>
+
+</body>
+</html>
