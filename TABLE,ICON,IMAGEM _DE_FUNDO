@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia</title>
+  <style>
+    /* ESTILOS UNIFICADOS */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3 url('https://ead.graup.com.br/images/courses/barbeiro-profissional.jpg?=1714855146');
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 20px;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      color: #333;
+    }
+
+    h2 {
+      margin-top: 40px;
+      text-align: center;
+      color: #444;
+    }
+
+    hr {
+      border: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    mark {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      background-color: yellow;
+      padding: 5px 10px;
+      border-radius: 3px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+
+    .imagem-link {
+      cursor: pointer;
+      border: 2px solid #333;
+      border-radius: 5px;
+      transition: all 0.3s;
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .imagem-link:hover {
+      transform: scale(1.02);
+      border-color: #ff0000;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    }
+
+    .servicos-lista {
+      margin-left: 20px;
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    /* Caixas de informação */
+    .info {
+      background: white;
+      padding: 20px;
+      margin: 25px auto;
+      max-width: 700px;
+      border-radius: 10px;
+      border: 2px solid #444;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      display: none;
+    }
+
+    /* Quando clicar e acessar a âncora */
+    :target {
+      display: block;
+      animation: fade 0.4s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .voltar {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .voltar:hover {
+      background: #444;
+    }
+
+    table {
+      width: 100%;
+      max-width: 500px;
+      margin: 25px auto;
+      border-collapse: collapse;
+      background: white;
+    }
+    
+    th, td {
+      border: 2px solid #333;
+      padding: 12px;
+      text-align: center;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    address {
+      margin-top: 20px;
+      display: block;
+      font-style: normal;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      border-left: 4px solid #333;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #ccc;
+      padding-left: 15px;
+      margin: 20px 0;
+    }
+
+    /* Mapa de imagem */
+    img[usemap] {
+      border: 3px solid #333;
+      border-radius: 8px;
+      cursor: crosshair;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+        margin: 10px;
+      }
+      
+      .imagem-link {
+        width: 100%;
+        height: auto;
+      }
+      
+      table {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+      
+      h2 {
+        font-size: 20px;
+      }
+      
+      mark {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Minha Barbearia</h1>
+    <hr>
+
+    <p style="text-align: center; font-size: 18px;">
+      <sup>Seja bem-vindo a minha Barbearia!</sup>
+    </p>
+    
+    <div style="font-family: 'Courier New', Courier, monospace; font-size: 20px; color: rgb(3, 3, 3); text-align: center;">
+      <p>Aqui você encontra os <strong>Melhores</strong> cortes<br>
+      para <strong>todos</strong> os <strong>estilos</strong> e <em>idades.</em></p>
+
+      <img src="https://img.freepik.com/fotos-premium/cliente-hipster-cortando-o-cabelo-maos-de-barbeiro-com-maquina-de-cortar-cabelo-close-up-homem-barbudo-na-barbearia-conceito-de-corte-de-cabelo-homem-visitando-cabeleireiro-na-barbearia_293990-3162.jpg" 
+           width="450" 
+           height="300" 
+           alt="Imagem da Barbearia - Clique para ver galeria" 
+           class="imagem-link"
+           onclick="window.location.href='segunda_pagina.html'">
+    </div>
+
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+      <small>Nossos barbeiros são profissionais experientes e dedicados a proporcionar a melhor experiência possível.</small>
+    </p>
+
+    <p><em>Nossos serviços incluem:</em></p>
+    <ul class="servicos-lista">
+      <li><ins>Cortes de cabelo</ins></li>
+      <li>Barba e bigode</li>
+      <li>Tratamentos capilares</li>
+      <li><abbr title="Design de sobrancelhas">Design de sobrancelhas</abbr></li>
+      <li><del>Atendimento personalizado</del> <ins>(Sempre incluso!)</ins></li>
+      <li><bdo dir="rtl">Ambiente acolhedor e descontraído</bdo></li>
+      <li><sub>Produtos de alta qualidade</sub></li>
+    </ul>
+
+    <mark>Agende seu horário e venha nos visitar!</mark>
+
+    <table>
+      <tr>
+        <th>Dia</th>
+        <th>Horário</th>
+      </tr>
+      <tr>
+        <td>Segunda a Sexta</td>
+        <td>09:00 - 19:00</td>
+      </tr>
+      <tr>
+        <td>Sábado</td>
+        <td>08:00 - 17:00</td>
+      </tr>
+    </table>
+
+    <address>
+      <strong>Contato:</strong><br>
+      Email: Oliverisaque23@gmail.com<br>
+      Telefone: (11) 98765-4321<br>
+      Endereço: Rua das Barbearias, 123 - Centro
+    </address>
+
+    <div style="font-family: 'Arial Black', Gadget, sans-serif; font-size: 20px; color: red; text-align: center; margin-top: 30px;">
+      <strong>
+        <blockquote>Esperamos por você!</blockquote>
+      </strong>
+    </div>
+    
+    <h2>Bancada Interativa - Clique nos itens</h2>
+
+    <img src="https://carrefourbr.vtexassets.com/arquivos/ids/183161583/image-0.jpg?v=638739445666500000"
+         width="714" height="493"
+         alt="Bancada da Barbearia"
+         usemap="#mapaBancada">
+
+    <map name="mapaBancada">
+      <area shape="rect" coords="120,200,230,400" href="#maqCorte1" alt="Máquina de Corte Dourada">
+      <area shape="rect" coords="260,180,370,390" href="#maqAcab1" alt="Máquina de Acabamento Dourada">
+      <area shape="circle" coords="445,295,65" href="#pincel" alt="Pincel Removedor">
+      <area shape="rect" coords="520,170,610,400" href="#spray" alt="Spray de Barbear">
+      <area shape="circle" coords="245,415,85" href="#papel" alt="Papel Pescoceira">
+      <area shape="rect" coords="310,330,385,480" href="#maqCorte2" alt="Máquina de Corte Preta">
+      <area shape="rect" coords="390,330,465,480" href="#maqAcab2" alt="Máquina de Acabamento Preta">
+      <area shape="rect" coords="470,330,560,480" href="#pentes" alt="Pentes e Acessórios">
+    </map>
+
+    <!-- Janelas de Informação -->
+    <div id="maqCorte1" class="info">
+      <h3>Máquina de Corte Dourada</h3>
+      <p>Máquina potente, usada para cortes gerais e remoção de volume. Possui motor silencioso e várias posições de corte.</p>
+      <a class="voltar" href="#">Fechar</a>
+    </div>
+
+    <div id="maqAcab1" class="info">
+      <h3>Máquina de Acabamento Dourada</h3>
+      <p>Ideal para detalhes, contornos e degradês precisos. Lâminas de alta precisão para acabamento profissional.</p>
+      <a class="voltar" href="#">Fechar</a>
+    </div>
+
+    <div id="pincel" class="info">
+      <h3>Pincel Removedor de Cabelos</h3>
+      <p>Utilizado para retirar fios soltos do pescoço e rosto sem irritar a pele. Cerdas macias e anatômicas.</p>
+      <a class="voltar" href="#">Fechar</a>
+    </div>
+
+    <div id="spray" class="info">
+      <h3>Spray de Barbear</h3>
+      <p>Ajuda a hidratar, facilita o deslizar da lâmina e evita irritações. Com óleos naturais e vitamina E.</p>
+      <a class="voltar" href="#">Fechar</a>
+    </div>
+
+    <div id="papel" class="info">
+      <h3>Papel Pescoceira</h3>
+      <p>Utilizado para higiene e conforto, evitando contato da capa com a pele. Descartável e hipoalergênico.</p>
+      <a class="voltar" href="#">Fechar</a>
+    </div>
+
+    <div id="maqCorte2" class="info">
+      <h3>Máquina de Corte Preta</h3>
+      <p>Modelo leve e eficiente para cortes tradicionais e remoção de volume. Bateria de longa duração.</p>
+      <a class="voltar" href="#">Fechar</a>
+    </div>
+
+    <div id="maqAcab2" class="info">
+      <h3>Máquina de Acabamento Preta</h3>
+      <p>Usada para contornos, desenhos e detalhes finos no cabelo. Precisão milimétrica para designs complexos.</p>
+      <a class="voltar" href="#">Fechar</a>
+    </div>
+
+    <div id="pentes" class="info">
+      <h3>Pentes e Acessórios</h3>
+      <p>Acessórios que definem a altura do corte e ajudam na precisão. Conjunto completo com diferentes tamanhos.</p>
+      <a class="voltar" href="#">Fechar</a>
+    </div>
+  </div>
+</body>
+</html>
